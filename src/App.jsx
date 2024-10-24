@@ -12,8 +12,8 @@ function App() {
   // Function to handle form submission
   const handleSubmit = async () => {
     const wordCount = prompt.trim().split(/\s+/).length;
-    if (wordCount < 5) {
-      setEnhancedPrompt("Prompt needs at least 5 words.");
+    if (wordCount < 1) {
+      setEnhancedPrompt("Prompt needs at least 1 word.");
       setIsLoading(false);
       return;
     }
