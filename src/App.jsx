@@ -7,7 +7,7 @@ function App() {
   const handleSubmit = async () => {
     setIsLoading(true)
     try {
-      const req = await fetch('http://localhost:3000/enhance', {
+      const req = await fetch('https://enhance-prompt-back-zeta.vercel.app/enhance', {
         method: "POST",
         headers: {
           'Content-type': 'application/json'
